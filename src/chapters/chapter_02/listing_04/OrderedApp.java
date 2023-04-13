@@ -30,6 +30,6 @@ public class OrderedApp {
         array.delete(55);
         array.delete(99);
 
-        array.display(); // display items againn
+        array.display(); // display items again
     }
 }
