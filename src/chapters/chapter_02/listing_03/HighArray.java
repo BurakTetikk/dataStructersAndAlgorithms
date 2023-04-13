@@ -51,4 +51,38 @@ public class HighArray {
         }
         System.out.println();
     }
+
+    public long getMax() {
+      long highest = -1;
+        if(nElems == 0)
+            return highest;
+        for (int j = 0; j < nElems; j++) {
+            if (highest < a[j])
+                highest = a[j];
+        }
+        return highest;
+    }
+
+    public boolean removeMax() {
+        int j;
+
+        for (j = 0; j < nElems; j++) {
+            if (a[j] == getMax())
+                break;
+        }
+
+        if (j == nElems)
+            return false;
+        else {
+            for (int k = j; k < nElems; k++)
+                a[k] = a[k + 1];
+        }
+        nElems--;
+        return true;
+
+/*        long max = getMax();
+        delete(max);
+        return max;*/
+
+    }
 }

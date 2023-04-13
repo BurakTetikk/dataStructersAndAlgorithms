@@ -20,6 +20,9 @@ public class HighArrayApp {
 
         array.display(); //display items
 
+        System.out.println("highest -> " + array.getMax());
+
+
         int searchKey = 35; //search for item
 
         if (array.find(searchKey))
@@ -27,10 +30,17 @@ public class HighArrayApp {
         else
             System.out.println("Can't find " + searchKey);
 
+
         array.delete(00); //delete 3 items
         array.delete(55);
         array.delete(99);
 
         array.display(); // display items again
+
+        System.out.println("highest -> " + array.getMax());
+
+        array.removeMax();
+
+        array.display();
     }
 }
