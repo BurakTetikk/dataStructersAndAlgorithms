@@ -1,4 +1,4 @@
-package chapters.chapter_03;
+package chapters.chapter_03.listing_01;
 
 public class ArrayBub {
     private long[] arr;  //ref to array a

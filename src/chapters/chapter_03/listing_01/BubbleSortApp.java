@@ -1,4 +1,6 @@
-package chapters.chapter_03;
+package chapters.chapter_03.listing_01;
+
+import chapters.chapter_03.listing_01.ArrayBub;
 
 public class BubbleSortApp {
     public static void main(String[] args) {
